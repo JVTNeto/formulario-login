@@ -1,6 +1,14 @@
+:root {
+    --cor-fundo: #643d87;
+    --imagem-fundo: url(../img/fundo.jpg);
+    --cor-logar: linear-gradient(to bottom, #faa600, #f68a00);
+    --email-img: url(../img/icone-usuario.png);
+    --senha-img: url(../img/icone-cadeado.png);
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #643d87 url(../img/fundo.jpg) no-repeat top center;
+    background: var(--cor-fundo) var(--imagem-fundo) no-repeat top center;
     background-size: cover;
 }
 
@@ -36,16 +44,16 @@ input {
 }
 
 input.email {
-    background-image: url(../img/icone-usuario.png);
+    background-image: var(--email-img);
 }
 
 input.senha {
-    background-image: url(../img/icone-cadeado.png);
+    background-image: var(--senha-img);
 }
 
 input.submit {
     color: #fff;
-    background-color: #f79300;
+    background: var(--cor-logar);
     border: 2px solid #db7d00;
     padding: 5px 20px;
     height: 45px;
